@@ -1,7 +1,7 @@
 import './App.css';
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   const expense = [
     {
       id: "e1",
@@ -30,8 +30,6 @@ function App() {
   ]
   return (
     <div className="App">
-      <h1>Let's gets Started</h1>
-      <p>New paragraph is added</p>
       <Expenses expense={expense}/>
       {/* here we can also write </ExpenseItem> */}
     </div>
